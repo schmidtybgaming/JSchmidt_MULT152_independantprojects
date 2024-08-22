@@ -884,11 +884,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: c3ae74d9-bc2c-425a-ac93-510af76d3ea6
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: JSchmidt_Unit1
+  organizationId: hats24
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 

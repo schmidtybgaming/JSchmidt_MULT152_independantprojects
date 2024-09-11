@@ -9,14 +9,14 @@ public class Player : MonoBehaviour
     public float jumpForce = 5.0f;
     private float horizontalInput;
     private float verticalInput;
-    private Rigidbody player;
+    private Rigidbody playerRb;
     public bool isOnGround = true;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GetComponent<Rigidbody>();
+        playerRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -25,12 +25,12 @@ public class Player : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        transform.Translate(Vector3.back * Time.deltaTime * speed * horizontalInput);
-        transform.Translate(Vector3.right * Time.deltaTime * speed * verticalInput);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * horizontalInput);
+        transform.Translate(Vector3.left * Time.deltaTime * speed * verticalInput);
 
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
-            player.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
         }
 

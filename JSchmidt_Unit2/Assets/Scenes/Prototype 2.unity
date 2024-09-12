@@ -501,24 +501,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1020240992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 102230, guid: 85de8c5eef336ad48900b2ac3e7bf65d, type: 3}
-  m_PrefabInstance: {fileID: 1516529584}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1020240993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020240992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1d8c7e5a8320cd419b86734d5c8897d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!850595691 &1105424453
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -822,10 +804,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5761564407932611180, guid: 13c96b8bee1989c478e71dff19134988, type: 3}
-      propertyPath: speed
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 5761564408123229449, guid: 13c96b8bee1989c478e71dff19134988, type: 3}
       propertyPath: m_Name
       value: Animal_Horse_Brown
@@ -883,10 +861,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8531378530564230196, guid: ae9fad6f73d16c2469cae72a4daa7bbc, type: 3}
-      propertyPath: speed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 8531378532522387646, guid: ae9fad6f73d16c2469cae72a4daa7bbc, type: 3}
       propertyPath: m_Name
       value: Animal_Rooster_Brown

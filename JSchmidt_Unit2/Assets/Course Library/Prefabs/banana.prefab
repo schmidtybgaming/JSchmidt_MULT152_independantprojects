@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7765877170676950868}
   - component: {fileID: 7777480536072446378}
   - component: {fileID: 7763592552511222878}
+  - component: {fileID: 5544104292802168460}
   m_Layer: 0
   m_Name: banana
   m_TagString: Untagged
@@ -97,3 +98,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &5544104292802168460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7762485155194165070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e897c1e3ec18c9d4cb7624d254db671a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

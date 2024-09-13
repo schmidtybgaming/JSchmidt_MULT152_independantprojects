@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private Rigidbody playerRb;
-    public bool isOnGround = true;
+    
 
 
     // Start is called before the first frame update
@@ -28,10 +28,10 @@ public class Player : MonoBehaviour
         transform.Translate(Vector3.forward * Time.deltaTime * speed * horizontalInput);
         transform.Translate(Vector3.left * Time.deltaTime * speed * verticalInput);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isOnGround = false;
+            
         }
 
     }

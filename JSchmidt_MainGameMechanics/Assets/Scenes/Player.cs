@@ -6,17 +6,15 @@ public class Player : MonoBehaviour
 
 {
     public float speed = 40.0f;
-    public float jumpForce = 5.0f;
     private float horizontalInput;
     private float verticalInput;
-    private Rigidbody playerRb;
-    
+    public GameObject projectile;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        playerRb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -30,7 +28,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            Instantiate(projectile, transform.position, projectile.transform.rotation);
             
         }
 

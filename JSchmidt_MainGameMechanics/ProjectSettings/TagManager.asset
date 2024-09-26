@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Password Pink
+  - Password Lime
+  - Password Clay
+  - Password Sea
   layers:
   - Default
   - TransparentFX

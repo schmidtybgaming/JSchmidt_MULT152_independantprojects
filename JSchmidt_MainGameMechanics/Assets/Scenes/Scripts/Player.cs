@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private float y;
     public float sensitivity = -1.0f;
     private Vector3 rotate;
+    
 
 
     // Start is called before the first frame update
@@ -25,6 +26,9 @@ public class Player : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
+        InvokeRepeating("LaunchProjectile", 2.0f, 0.3f);
+
+
     }
 
     // Update is called once per frame
@@ -44,6 +48,7 @@ public class Player : MonoBehaviour
         {
             Instantiate(projectile, transform.position, projectile.transform.rotation);
             
+
         }
 
         if (Input.GetKeyDown(KeyCode.J) && isOnGround)
@@ -61,6 +66,8 @@ public class Player : MonoBehaviour
 
    }
 
+    
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -68,5 +75,11 @@ public class Player : MonoBehaviour
         {
             isOnGround = true;
         }
+    }
+
+    void LaunchProjectile()
+    {
+        // Instantiate the projectile at the current position and rotation
+        Instantiate(projectile, transform.position, projectile.transform.rotation);
     }
 }

@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     {
         playerRB = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        InvokeRepeating("LaunchProjectile", 2.0f, 0.3f);
+        
 
 
     }

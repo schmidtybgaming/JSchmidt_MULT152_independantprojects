@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine;
+
 public class PasswordActivator : MonoBehaviour
 {
     public GameObject boxPink;
@@ -70,3 +72,4 @@ public class PasswordActivator : MonoBehaviour
         }
     }
 }
+

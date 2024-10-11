@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectile, transform.position, projectile.transform.rotation);
+            Instantiate(projectile, transform.position, transform.rotation);
             
 
         }
@@ -77,9 +77,5 @@ public class Player : MonoBehaviour
         }
     }
 
-    void LaunchProjectile()
-    {
-        // Instantiate the projectile at the current position and rotation
-        Instantiate(projectile, transform.position, projectile.transform.rotation);
-    }
+    
 }

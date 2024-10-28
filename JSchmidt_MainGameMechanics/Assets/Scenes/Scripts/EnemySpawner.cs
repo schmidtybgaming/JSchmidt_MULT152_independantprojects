@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour
         {
             // Generate random position within the specified bounds
             float randomX = Random.Range(-158f, 4f);
-            float randomY = 3f;
+            float randomY = 0.5f;
             float randomZ = Random.Range(-70f, 13f);
             Vector3 randomPosition = new Vector3(randomX, randomY, randomZ);
 

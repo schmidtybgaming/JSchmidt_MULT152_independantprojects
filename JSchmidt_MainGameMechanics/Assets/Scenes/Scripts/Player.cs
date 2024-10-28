@@ -9,26 +9,25 @@ public class Player : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     public GameObject projectile;
-
     public float jumpForce = 20.0f;
     private Rigidbody playerRB;
     public bool isOnGround = true;
-
     private float x;
     private float y;
     public float sensitivity = -1.0f;
     private Vector3 rotate;
-    
 
+    private Animator animator;
+    public AudioClip laserSound;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        
-
-
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,37 +36,43 @@ public class Player : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
+        // Movement
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
         transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
 
-        
-
-        
+        // Animation states
+        if (horizontalInput != 0 || verticalInput != 0)
+        {
+            animator.SetBool("isWalking", true);
+            Debug.Log("Walking");
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+            Debug.Log("Idle");
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(projectile, transform.position, transform.rotation);
-            
-
+            animator.SetTrigger("attack");
+            audioSource.PlayOneShot(laserSound);
+            Debug.Log("Attack");
         }
 
         if (Input.GetKeyDown(KeyCode.J) && isOnGround)
         {
             playerRB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+            animator.SetTrigger("jump");
+            Debug.Log("Jump");
         }
 
         y = Input.GetAxis("Mouse X");
         x = Input.GetAxis("Mouse Y");
         rotate = new Vector3(x, y * sensitivity, 0);
         transform.eulerAngles = transform.eulerAngles - rotate;
-
-
-
-   }
-
-    
-
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -76,6 +81,4 @@ public class Player : MonoBehaviour
             isOnGround = true;
         }
     }
-
-    
 }

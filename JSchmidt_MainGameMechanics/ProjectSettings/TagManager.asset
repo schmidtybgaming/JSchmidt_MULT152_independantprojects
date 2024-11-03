@@ -9,6 +9,7 @@ TagManager:
   - Password Lime
   - Password Clay
   - Password Sea
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,9 @@ using UnityEngine;
 public class Player : MonoBehaviour
 
 {
+    public GameObject cameraRotater;
+    private Vector3 cameraRotateX;
+    public static bool isHidden;
     public float speed = 10.0f;
     private float horizontalInput;
     private float verticalInput;
@@ -70,8 +73,10 @@ public class Player : MonoBehaviour
 
         y = Input.GetAxis("Mouse X");
         x = Input.GetAxis("Mouse Y");
-        rotate = new Vector3(x, y * sensitivity, 0);
+        rotate = new Vector3(0, y * sensitivity, 0);
+        cameraRotateX = new Vector3(x, 0, 0);
         transform.eulerAngles = transform.eulerAngles - rotate;
+        cameraRotater.transform.eulerAngles -= cameraRotateX;
     }
 
     private void OnCollisionEnter(Collision collision)

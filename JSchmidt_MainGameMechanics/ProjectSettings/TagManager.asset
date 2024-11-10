@@ -10,6 +10,7 @@ TagManager:
   - Password Clay
   - Password Sea
   - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX

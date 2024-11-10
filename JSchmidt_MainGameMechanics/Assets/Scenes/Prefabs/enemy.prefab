@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5322120101565978813}
   - component: {fileID: 1607307945929137309}
   - component: {fileID: -4891601043787522841}
-  - component: {fileID: -1747871164917713137}
+  - component: {fileID: -466020194329271538}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
---- !u!114 &-1747871164917713137
+--- !u!114 &-466020194329271538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca9df37f236c97641a24f5e120490545, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 527816560924695306, guid: ab3cb071e1cf00a48ae75eee59a26817, type: 3}
-  firePoint: {fileID: -8679921383154817045, guid: c2709b275a7705b44bff6ebf873348dd, type: 3}
   attackInterval: 1
   numberOfAttacks: 5

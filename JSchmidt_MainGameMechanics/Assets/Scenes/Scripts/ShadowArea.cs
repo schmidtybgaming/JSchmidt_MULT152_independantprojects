@@ -4,26 +4,35 @@ using UnityEngine;
 
 public class ShadowArea : MonoBehaviour
 {
+    public bool flashlightOn = true; // Initial state of the flashlight
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // Toggle flashlight with the 'F' key
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            flashlightOn = !flashlightOn;
+            Debug.Log("Flashlight toggled: " + (flashlightOn ? "On" : "Off"));
+        }
     }
 
-    void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other)
     {
-        if ( other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Player.isHidden = true;
-            Debug.Log("PlayerHidden");
+            if (!flashlightOn)
+            {
+                Player.isHidden = true;
+                Debug.Log("PlayerHidden");
+            }
         }
-        
     }
 
     void OnTriggerExit(Collider other)
@@ -32,6 +41,5 @@ public class ShadowArea : MonoBehaviour
         {
             Player.isHidden = false;
         }
-
     }
 }

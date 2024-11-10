@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-
 {
     public GameObject cameraRotater;
     private Vector3 cameraRotateX;
@@ -24,7 +23,7 @@ public class Player : MonoBehaviour
     public AudioClip laserSound;
     private AudioSource audioSource;
 
-    
+    public int playerHealth = 10; // Player health starts at 10
 
     // Start is called before the first frame update
     void Start()
@@ -79,14 +78,7 @@ public class Player : MonoBehaviour
         cameraRotateX = new Vector3(x, 0, 0);
         transform.eulerAngles = transform.eulerAngles - rotate;
         cameraRotater.transform.eulerAngles -= cameraRotateX;
-
-        
-
-    
-    
-        
-    
-}
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -94,7 +86,16 @@ public class Player : MonoBehaviour
         {
             isOnGround = true;
         }
+        else if (collision.gameObject.CompareTag("Enemy"))
+        {
+            playerHealth--; // Decrease player health by 1
+
+            if (playerHealth <= 0)
+            {
+                Debug.Log("Player Died");
+                Time.timeScale = 0; // Pause the game
+                // Implement additional player death logic here, e.g., show game over screen
+            }
+        }
     }
-
-
 }

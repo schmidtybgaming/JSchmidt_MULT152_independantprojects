@@ -17,9 +17,10 @@ GameObject:
   - component: {fileID: 5039178694776954205}
   - component: {fileID: -9051140232493915200}
   - component: {fileID: 4829119033494876212}
+  - component: {fileID: 5431607850489340288}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -215,5 +216,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc4b2adce1f712648b7ddb614a0d1151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5431607850489340288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527816560924695306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f6ccd4707cd8640bc74ff50297cc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

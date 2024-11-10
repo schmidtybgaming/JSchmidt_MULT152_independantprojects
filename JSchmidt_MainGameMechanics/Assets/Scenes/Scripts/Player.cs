@@ -24,6 +24,8 @@ public class Player : MonoBehaviour
     public AudioClip laserSound;
     private AudioSource audioSource;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,7 +79,14 @@ public class Player : MonoBehaviour
         cameraRotateX = new Vector3(x, 0, 0);
         transform.eulerAngles = transform.eulerAngles - rotate;
         cameraRotater.transform.eulerAngles -= cameraRotateX;
-    }
+
+        
+
+    
+    
+        
+    
+}
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -86,4 +95,6 @@ public class Player : MonoBehaviour
             isOnGround = true;
         }
     }
+
+
 }

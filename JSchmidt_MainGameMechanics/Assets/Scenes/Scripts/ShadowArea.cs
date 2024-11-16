@@ -5,6 +5,8 @@ using UnityEngine;
 public class ShadowArea : MonoBehaviour
 {
     public bool flashlightOn = true; // Initial state of the flashlight
+    public bool isInShadow = false;
+    public Light flashlight;
 
     // Start is called before the first frame update
     void Start()
@@ -19,27 +21,47 @@ public class ShadowArea : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.O))
         {
             flashlightOn = !flashlightOn;
+            flashlight.enabled = flashlightOn;
             Debug.Log("Flashlight toggled: " + (flashlightOn ? "On" : "Off"));
         }
+
+        SetIsHidden();
+    }
+
+    void SetIsHidden()
+    {
+        if (isInShadow && !flashlightOn)
+        {
+            Player.isHidden = true;
+        }
+
+        else
+        {
+            Player.isHidden = false;
+        }
+
+        Debug.Log(Player.isHidden);
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+
+
         {
-            if (!flashlightOn)
-            {
-                Player.isHidden = true;
-                Debug.Log("PlayerHidden");
-            }
+            isInShadow = true;
+            Debug.Log("setting is in shadow to true");
         }
     }
 
     void OnTriggerExit(Collider other)
     {
+        
         if (other.CompareTag("Player"))
         {
-            Player.isHidden = false;
+            
+            isInShadow = false;
+            Debug.Log("setting is in shadow to false");
         }
     }
 }

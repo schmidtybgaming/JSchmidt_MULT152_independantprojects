@@ -20,25 +20,25 @@ public class PasswordActivator : MonoBehaviour
     {
         Debug.Log("Triggered by: " + other.gameObject.name);
 
-        if (other.gameObject.CompareTag("PasswordPink"))
+        if (other.gameObject.CompareTag("Password Pink"))
         {
             hasPasswordPink = true;
             Destroy(other.gameObject);
             Debug.Log("Picked up Password Pink!");
         }
-        else if (other.gameObject.CompareTag("PasswordLime"))
+        else if (other.gameObject.CompareTag("Password Lime"))
         {
             hasPasswordLime = true;
             Destroy(other.gameObject);
             Debug.Log("Picked up Password Lime!");
         }
-        else if (other.gameObject.CompareTag("PasswordClay"))
+        else if (other.gameObject.CompareTag("Password Clay"))
         {
             hasPasswordClay = true;
             Destroy(other.gameObject);
             Debug.Log("Picked up Password Clay!");
         }
-        else if (other.gameObject.CompareTag("PasswordSea"))
+        else if (other.gameObject.CompareTag("Password Sea"))
         {
             hasPasswordSea = true;
             Destroy(other.gameObject);

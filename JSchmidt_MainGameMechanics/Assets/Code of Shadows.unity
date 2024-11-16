@@ -10821,19 +10821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackInterval: 1
   numberOfAttacks: 5
---- !u!114 &171345606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171345604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlightOn: 1
+  playerHealth: 10
 --- !u!4 &179536268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3232699976469291583, guid: 9a2cc7ad1a225a5419653f6000df779b, type: 3}
@@ -11194,7 +11182,7 @@ GameObject:
   - component: {fileID: 267469624}
   m_Layer: 0
   m_Name: boxLime
-  m_TagString: Untagged
+  m_TagString: Password Lime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13163,19 +13151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackInterval: 1
   numberOfAttacks: 5
---- !u!114 &529146493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529146491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlightOn: 1
+  playerHealth: 10
 --- !u!1 &529178167
 GameObject:
   m_ObjectHideFlags: 0
@@ -13839,12 +13815,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569417857}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flashlightOn: 1
+  isInShadow: 0
+  flashlight: {fileID: 1671341989}
 --- !u!65 &569417859
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14843,12 +14821,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 700375545}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flashlightOn: 1
+  isInShadow: 0
+  flashlight: {fileID: 1671341989}
 --- !u!65 &700375547
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16850,19 +16830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackInterval: 1
   numberOfAttacks: 5
---- !u!114 &990856081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990856079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlightOn: 1
+  playerHealth: 10
 --- !u!1 &992175388
 GameObject:
   m_ObjectHideFlags: 0
@@ -17536,12 +17504,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079151664}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flashlightOn: 1
+  isInShadow: 0
+  flashlight: {fileID: 1671341989}
 --- !u!65 &1079151666
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18608,6 +18578,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110197759}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1112734514 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8950459724590705998, guid: 5564199ec6443b94d94a03e8f50a7800, type: 3}
+  m_PrefabInstance: {fileID: 6857512748994279230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1136723803
 GameObject:
   m_ObjectHideFlags: 0
@@ -19799,7 +19774,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266669853}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 834b359fbc7e40b4ebe2d204bbaf5d58, type: 3}
   m_Name: 
@@ -21325,12 +21300,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381760035}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flashlightOn: 1
+  isInShadow: 0
+  flashlight: {fileID: 1671341989}
 --- !u!65 &1381760037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21780,19 +21757,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5065405701077676519, guid: 9a32cbb23de0d5747ad659283bb11bf1, type: 3}
   m_PrefabInstance: {fileID: 1964273544631883935}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1437602134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1437602133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashlightOn: 1
 --- !u!4 &1437602140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2812277241915613595, guid: 9a32cbb23de0d5747ad659283bb11bf1, type: 3}
@@ -21812,6 +21776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackInterval: 1
   numberOfAttacks: 5
+  playerHealth: 10
 --- !u!1 &1443761691
 GameObject:
   m_ObjectHideFlags: 0
@@ -21943,6 +21908,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1475984840 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4793249625074643814, guid: fd36070f9a75852449f5313e50f038dc, type: 3}
+  m_PrefabInstance: {fileID: 7032835991982607265}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1481007247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1703521473871772157, guid: faf909927adc6e741855b66ac4f23557, type: 3}
@@ -22574,7 +22544,7 @@ MonoBehaviour:
   isOnGround: 1
   sensitivity: -1
   laserSound: {fileID: 0}
-  playerHealth: 10
+  playerHealth: 50
 --- !u!65 &1585923800
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22616,6 +22586,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 208d8cb6d13479f4584b662b7b78ed08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1585923803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585923796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f65277523b205145887bc1cbe478ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPink: {fileID: 4793249625074643814, guid: fd36070f9a75852449f5313e50f038dc, type: 3}
+  boxLime: {fileID: 8950459724590705998, guid: 5564199ec6443b94d94a03e8f50a7800, type: 3}
+  boxClay: {fileID: 1703521473871772156, guid: faf909927adc6e741855b66ac4f23557, type: 3}
+  boxSea: {fileID: 1534134803041577108, guid: a6370f4b764747545b7d8bb8445bb526, type: 3}
 --- !u!1 &1592636185
 GameObject:
   m_ObjectHideFlags: 0
@@ -23914,7 +23900,7 @@ GameObject:
   - component: {fileID: 1692488799}
   m_Layer: 0
   m_Name: boxPink
-  m_TagString: Untagged
+  m_TagString: Password Pink
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23997,6 +23983,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1692488797}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1694029117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1534134803041577108, guid: a6370f4b764747545b7d8bb8445bb526, type: 3}
+  m_PrefabInstance: {fileID: 1534134802621839184}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1694029122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694029117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f65277523b205145887bc1cbe478ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPink: {fileID: 4793249625074643814, guid: fd36070f9a75852449f5313e50f038dc, type: 3}
+  boxLime: {fileID: 8950459724590705998, guid: 5564199ec6443b94d94a03e8f50a7800, type: 3}
+  boxClay: {fileID: 1703521473871772156, guid: faf909927adc6e741855b66ac4f23557, type: 3}
+  boxSea: {fileID: 1534134803041577108, guid: a6370f4b764747545b7d8bb8445bb526, type: 3}
 --- !u!1 &1695494932
 GameObject:
   m_ObjectHideFlags: 0
@@ -24502,7 +24509,7 @@ GameObject:
   - component: {fileID: 1740083681}
   m_Layer: 0
   m_Name: boxSea
-  m_TagString: Untagged
+  m_TagString: Password Sea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25073,7 +25080,7 @@ GameObject:
   - component: {fileID: 1785645150}
   m_Layer: 0
   m_Name: boxClay
-  m_TagString: Untagged
+  m_TagString: Password Clay
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25480,12 +25487,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834302883}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4f7348ef2c45234e936d8ef51611755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   flashlightOn: 1
+  isInShadow: 0
+  flashlight: {fileID: 1671341989}
 --- !u!65 &1834302885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26669,6 +26678,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1981231168 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1703521473871772156, guid: faf909927adc6e741855b66ac4f23557, type: 3}
+  m_PrefabInstance: {fileID: 1703521474539034994}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1981231173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981231168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f65277523b205145887bc1cbe478ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPink: {fileID: 4793249625074643814, guid: fd36070f9a75852449f5313e50f038dc, type: 3}
+  boxLime: {fileID: 8950459724590705998, guid: 5564199ec6443b94d94a03e8f50a7800, type: 3}
+  boxClay: {fileID: 1703521473871772156, guid: faf909927adc6e741855b66ac4f23557, type: 3}
+  boxSea: {fileID: 1534134803041577108, guid: a6370f4b764747545b7d8bb8445bb526, type: 3}
 --- !u!1001 &2010806781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27913,6 +27943,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689747877}
     m_Modifications:
+    - target: {fileID: 3941849715701939562, guid: 05c427ba9948b4d4da9f87208936c396, type: 3}
+      propertyPath: flashlight
+      value: 
+      objectReference: {fileID: 1671341989}
     - target: {fileID: 3941849715701939563, guid: 05c427ba9948b4d4da9f87208936c396, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -28212,11 +28246,43 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3900228258155574850, guid: 5564199ec6443b94d94a03e8f50a7800, type: 3}
   m_PrefabInstance: {fileID: 6857512748994279230}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7569041810296242561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112734514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f65277523b205145887bc1cbe478ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPink: {fileID: 4793249625074643814, guid: fd36070f9a75852449f5313e50f038dc, type: 3}
+  boxLime: {fileID: 8950459724590705998, guid: 5564199ec6443b94d94a03e8f50a7800, type: 3}
+  boxClay: {fileID: 1703521473871772156, guid: faf909927adc6e741855b66ac4f23557, type: 3}
+  boxSea: {fileID: 1534134803041577108, guid: a6370f4b764747545b7d8bb8445bb526, type: 3}
 --- !u!4 &7569041811441411019 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 617842515051014250, guid: fd36070f9a75852449f5313e50f038dc, type: 3}
   m_PrefabInstance: {fileID: 7032835991982607265}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7569041811441411024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475984840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f65277523b205145887bc1cbe478ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxPink: {fileID: 4793249625074643814, guid: fd36070f9a75852449f5313e50f038dc, type: 3}
+  boxLime: {fileID: 8950459724590705998, guid: 5564199ec6443b94d94a03e8f50a7800, type: 3}
+  boxClay: {fileID: 1703521473871772156, guid: faf909927adc6e741855b66ac4f23557, type: 3}
+  boxSea: {fileID: 1534134803041577108, guid: a6370f4b764747545b7d8bb8445bb526, type: 3}
 --- !u!1001 &8205132961473678999
 PrefabInstance:
   m_ObjectHideFlags: 0

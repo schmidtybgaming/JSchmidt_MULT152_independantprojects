@@ -22,7 +22,7 @@ public class Target2 : MonoBehaviour
     void Start()
     {
         targetRB = GetComponent<Rigidbody>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
         RandomTorque();
         RandomForce();

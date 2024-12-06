@@ -3,7 +3,12 @@ guid: 8f047fda7eb801f4fabff2975d7c35a1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cameraRotater: {instanceID: 0}
+  - projectile: {fileID: 527816560924695306, guid: ab3cb071e1cf00a48ae75eee59a26817, type: 3}
+  - laserSound: {instanceID: 0}
+  - hudController: {instanceID: 0}
+  - uiManager: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

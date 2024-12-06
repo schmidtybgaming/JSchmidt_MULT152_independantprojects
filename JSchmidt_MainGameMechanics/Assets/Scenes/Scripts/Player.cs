@@ -25,6 +25,9 @@ public class Player : MonoBehaviour
 
     public int playerHealth = 10; // Player health starts at 10
 
+    public HUDController hudController; // Reference to the HUDController
+    public UIManager uiManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,9 @@ public class Player : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+
+        // Initialize the HUD with the player's health
+        hudController.UpdateHUD();
     }
 
     // Update is called once per frame
@@ -90,11 +96,14 @@ public class Player : MonoBehaviour
         {
             playerHealth--; // Decrease player health by 1
 
+            // Update the HUD with the new health value
+            hudController.UpdateHUD();
+
             if (playerHealth <= 0)
             {
                 Debug.Log("Player Died");
                 Time.timeScale = 0; // Pause the game
-                // Implement additional player death logic here, e.g., show game over screen
+                uiManager.ShowRestartScreen();
             }
         }
     }

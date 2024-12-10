@@ -29496,7 +29496,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!114 &2063774835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29510,8 +29509,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 1569816954}
-=======
->>>>>>> dd3fa152e5c509b5092284c3000fe65476958164
 --- !u!65 &2063774836
 BoxCollider:
   m_ObjectHideFlags: 0
